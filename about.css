@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 120px;
+    padding-left: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(#ce2bc0, #171ad1);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+/* Hide dropdown items initially */
+.nav-links li ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+/* Show dropdown items on hover */
+.nav-links li:hover ul {
+    display: block;
+}
+
+.nav-links li ul li {
+    padding: 5px 15px;
+    margin: 0;
+}
+
+.nav-links li ul li a {
+    color: black;
+    font-size: 15px;
+}
+
+/* Nav buttons */
+.nav-buttons {
+    display: flex;
+    padding-right: 20px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.franchise {
+    background-color: #007BFF;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-buttons {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .btn {
+        margin: 5px 0;
+    }
+}
+
+
+
+/* about page */
+.aboutpage {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+.aboutpage p {
+    font-size: 12px;
+}
+
+.aboutpage p2 {
+    font-size: 12px;
+    color: blue;
+}
+
+.aboutpage h4 {
+    margin-top: -15px;
+}
+
+/* /about img */
+.aboutimg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutimg p {
+    font-size: small;
+}
+
+.aboutpara p {
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-self: center;
+    text-wrap: wrap;
+}
+/* our team */
+/* Container for About and Team Section */
+.aboutimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.aboutimg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.aboutpara {
+    max-width: 800px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.aboutpara p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.aboutimg p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Team Profiles Container */
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    gap: 20px;
+    justify-content: center;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Individual Profile Card */
+.profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+    flex: 1 1 calc(25% - 20px); /* Adjust width for responsiveness */
+    margin: 10px;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.profile .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.profile .title {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack profiles vertically */
+        align-items: center;
+    }
+
+    .profile {
+        max-width: 300px; /* Adjust size for smaller screens */
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutpara p, 
+    .aboutimg p {
+        font-size: 14px; /* Reduce font size for readability */
+    }
+
+    .profile .name {
+        font-size: 16px;
+    }
+
+    .profile .title {
+        font-size: 12px;
+    }
+}
+
+/* footer */
+.logo {
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 20px 0;
+}
+
+.sub-text {
+color: #ffcc00;
+font-weight: bold;
+}
+
+.contact-info {
+margin: 20px 0;
+font-size: 16px;
+color: white;
+}
+
+.social-icons a {
+margin: 0 10px;
+color: white;
+font-size: 24px;
+}
+
+.footer a {
+color: black;
+text-decoration: none;
+}
+
+.footer a:hover {
+text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.footer .left, 
+.footer .right {
+    flex: 1; /* Make left and right sections flexible */
+    min-width: 300px; /* Prevent sections from becoming too narrow */
+    margin: 10px 0; /* Add spacing between rows on smaller screens */
+}
+
+.logofooter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logofooter img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sub-text {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.content-left {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.address {
+    margin-top: 10px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.contact-info div {
+    margin: 5px 0;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Add hover effect for icons */
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .footer {
+        flex-wrap: wrap; /* Stack sections for medium screens */
+        justify-content: center;
+    }
+
+    .footer .left, 
+    .footer .right {
+        flex: 1 1 45%; /* Adjust width for two-column layout */
+        text-align: center; /* Center align content */
+    }
+
+    .content-left, .contact-info {
+        text-align: center; /* Center text for better balance */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 20px;
+    }
+
+    .footer .left, 
+    .footer .right {
+        width: 100%; /* Full width for small screens */
+        text-align: center;
+    }
+
+    .logofooter {
+        margin-bottom: 20px;
+    }
+
+    .sub-text {
+        font-size: 12px; /* Adjust for smaller screens */
+    }
+
+    .content-left, .contact-info {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons a {
+        font-size: 20px; /* Reduce icon size for mobile */
+    }
+
+    .contact-info {
+        font-size: 14px; /* Smaller text for compact view */
+    }
+
+    .content-left, .address {
+        font-size: 12px; /* Optimize for readability */
+    }
+}

@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 200;
+
+}
+
+.nav-links a:hover {
+    background: linear-gradient(#ce2bc0, #171ad1);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.nav-buttons {
+    display: flex;
+    padding-right: 100px;
+}
+
+.btn {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp {
+    background-color: #25D366;
+
+}
+
+.franchise {
+    background-color: #007BFF;
+
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* heading */
+.location h1 {
+    text-align: center;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-post {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+.blog-post img {
+    width: 300px;
+    height: auto;
+}
+.blog-content {
+    padding: 20px;
+    flex: 1;
+}
+.blog-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.blog-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.blog-header .author-info {
+    font-size: 14px;
+    color: #777;
+}
+.blog-header .author-info span {
+    margin-right: 5px;
+}
+.blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.blog-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+}
+.blog-footer .views {
+    display: flex;
+    align-items: center;
+}
+.blog-footer .views i {
+    margin-right: 5px;
+}
+.blog-footer .likes {
+    display: flex;
+    align-items: center;
+}
+.blog-footer .likes i {
+    margin-right: 5px;
+}
