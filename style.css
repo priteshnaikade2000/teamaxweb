@@ -267,7 +267,7 @@ body {
 
 /* servings */
 .Servings {
-    height: auto; /* Allow the height to adjust based on content */
+    height: auto;
     width: 100%;
     background-color: rgb(98 251 178 / 27%);
     display: flex;
@@ -294,13 +294,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Ensure consistent spacing between items */
+    gap: 20px;
 }
 
 .menu-item {
     display: inline-block;
     text-align: center;
-    width: 150px; /* Default size for menu items */
+    width: 150px;
 }
 
 .menu-item img {
@@ -334,8 +334,12 @@ body {
         font-size: medium;
     }
 
+    .menu-container {
+        justify-content: space-around; /* Adjust alignment */
+    }
+
     .menu-item {
-        width: 120px; /* Adjust menu item size for tablets */
+        width: calc(33.33% - 20px); /* Three items per row */
     }
 
     .menu-item img {
@@ -349,7 +353,7 @@ body {
     }
 
     .menu-item p {
-        font-size: 16px; /* Reduce text size for better readability */
+        font-size: 16px;
     }
 }
 
@@ -365,12 +369,11 @@ body {
     }
 
     .menu-container {
-        flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Smaller gap for mobile */
+        justify-content: center;
     }
 
     .menu-item {
-        width: 100px; /* Smaller size for menu items */
+        width: calc(50% - 10px); /* Two items per row */
     }
 
     .menu-item img {
@@ -384,10 +387,9 @@ body {
     }
 
     .menu-item p {
-        font-size: 14px; /* Further reduce text size */
+        font-size: 14px;
     }
 }
-
 /* undermenu */
 .container {
     display: flex;
